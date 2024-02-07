@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        position: absolute;
+						
+						left: 60%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      h2 {
+        color: #333;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      textarea {
+        resize: vertical;
+      }
+      
+      button {
+        width: 100%;
+        padding: 15px;
+        background-color: #2e8b57;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: #238c55;
+      }
+      
+      .side-text {
+        margin-left: 30px;
+      }
+      
+      .side-text p {
+        margin: 10px 0;
+        color: #555;
+      }
+      </style> 
+
+  <div class="container">
+    <div class="form-container">
+      <h2>solicite una cotizacion aqui</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">telefono:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nombre">correo electronico:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+        <div class="form-group">
+          <label for="mensaje">mensaje/consulta:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="side-text">
+
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</body>
+</html>
